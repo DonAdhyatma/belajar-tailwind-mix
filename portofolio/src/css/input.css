@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+    tailwind menyebutnya three layers of tailwind
+    - base: tailwind akan mereset semua style yang dikasih oleh browser
+    - components: tailwind akan meminta component didalam librarynya. componen itu kaya container, grid sistem.
+    - utilities: tailwind akan memanggil direct utilities, class-class yang nantinya akan kita pakai
+*/
+/* 
+    jadi istilahnya akan mengcompile directive tailwind diatas yang nantinya akan dipakai oleh file web kita
+    tanda: --watch setiap perubahannya akan diketahui oleh tailwind, sehingga apapun yang kita lakukan di html kita akan langsung dilakukan proses perubahan
+    */
+/* 
+    cara restart builder atau watcher tailwindcss, melalui terminal untuk meminimalisir class tailwindcss yang kita gunakan
+    1. ketika builder tailwindcss masih jalan di terminal terminate terlebih dahulu
+    2. kemudian jalankan lagi : npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch
+*/
+/* 
+    untuk memperkecil ukuran file css:
+    npx tailwindcss -o ./public/css/final.css --minify
+    perintah tsb dijalankan di terminal
+*/
