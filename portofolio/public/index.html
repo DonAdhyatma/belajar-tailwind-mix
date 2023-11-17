@@ -6,9 +6,16 @@
     <title>Web Portofolio</title>
     <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="../img/logo1.png" />
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <style>
+      .gradient {
+        background-image: linear-gradient(to bottom right, #4c51bf, #702459);
+      }
+    </style>
   </head>
   <body>
+    <!-- Start section navbar -->
     <section class="w-screen mx-auto px-4">
       <nav class="flex flex-wrap p-6 justify-between">
         <div class="flex flex-shrink-0 mr-6">
@@ -29,13 +36,28 @@
             <a href="#contact" class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"> Contact me </a>
           </div>
 
-          <div class="block lg:hidden">
-            <a href="#" class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-green-700 mt-4 lg:mt-0"> Contact me </a>
+          <div class="block">
+            <a href="#" class="inline-block text-sm px-4 py-2 rounded text-green-600 border border-green-600 hover:border-transparent hover:text-white hover:bg-green-600 mt-4 lg:mt-0"> Contact me </a>
           </div>
         </div>
       </nav>
     </section>
-    <section class="w-screen mx-auto py-4 bg-pink-500 md:bg-indigo-700 h-32">About me</section>
+    <!-- End section navbar -->
+    <section class="w-screen mx-auto py-4 bg-pink-500 md:bg-indigo-700 gradient">
+      <div class="px-16 py-8 text-center text-white">
+        <h1 class="w-full text-5xl font-bold">About me</h1>
+        <div class="mb-4">
+          <div class="bg-pink-500 w-1/4 opacity-75 rounded h-1 mx-auto"></div>
+        </div>
+        <h2 class="text-3xl font-bold mb-2 text-white text-center">Hai, Aku Naufal. Senang berjumpa dengan Anda.</h2>
+        <h3 class="text-lg mb-2">Saya seorang programmer dan juga data analyst, selain dapat membuat aplikasi menggunakan bahasa pemrograman, saya juga bisa merancang suatu sistem yang dibutuhkan user</h3>
+        <div class="w-full">
+          <div class="px-4 py-4">
+            <img src="../img/orang.jpg" alt="kucing" class="shadow-lg rounded-full max-w-full mx-auto text-center w-48" />
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="w-screen mx-auto py-4 bg-white h-32">Skill Framework</section>
     <section class="w-screen mx-auto py-4 bg-gray-300 h-32 text-red-600 lg:text-green-700">Recent Work</section>
     <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">Contact me</section>
