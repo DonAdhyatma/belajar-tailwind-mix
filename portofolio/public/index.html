@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="web portofolio tailwind" />
+    <meta name="keyword" content="tailwindcss, css, tailwind" />
+    <meta name="author" content="codepolitan" />
     <title>Web Portofolio</title>
     <!-- <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,6 +15,9 @@
     <style>
       .gradient {
         background-image: linear-gradient(to bottom right, #4c51bf, #702459);
+      }
+      .gradient-skill {
+        background-image: linear-gradient(#fc8181, #fed7d7);
       }
     </style>
   </head>
@@ -62,9 +68,9 @@
       </div>
       <!-- end about me description -->
       <!-- start about me list skills -->
-      <div class="grid grid-cols-1 md:grid-cols-3 bg-white m-16 rounded-lg">
+      <div class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 md:px-8 m-16 rounded-lg">
         <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
-          <i class="fas fa-laptop-code text-blue-500 fa-5x mb-6"></i>
+          <i class="fas fa-laptop-code lg:text-blue-500 text-red-500 fa-5x mb-6"></i>
           <div class="p-4">
             <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
             <p class="text-gray-600 text-base mb-2">PHP</p>
@@ -77,12 +83,12 @@
             <hr class="text-gray-600 mb-2" />
           </div>
           <div class="px-2 py-4">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
+            <button class="lg:bg-blue-500 lg:hover:bg-white lg:hover:text-blue-500 bg-red-500 hover:text-red-500 hover:bg-white text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
           </div>
         </div>
 
         <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
-          <i class="fas fa-pencil-ruler text-red-500 fa-5x mb-6"></i>
+          <i class="fas fa-pencil-ruler lg:text-red-500 text-cyan-500 fa-5x mb-6"></i>
           <div class="p-4">
             <p class="font-bold text-lg md:text-xl mb-6">Design</p>
             <p class="text-gray-600 text-base mb-2">CSS</p>
@@ -95,11 +101,11 @@
             <hr class="text-gray-600 mb-2" />
           </div>
           <div class="px-2 py-4">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
+            <button class="lg:bg-blue-500 lg:hover:bg-white lg:hover:text-blue-500 bg-red-500 hover:text-red-500 hover:bg-white text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
           </div>
         </div>
         <div class="max-w-sm shadow-lg px-4 py-4 bg-white m-3 text-center">
-          <i class="fas fa-database text-green-500 fa-5x mb-6"></i>
+          <i class="fas fa-database lg:text-green-500 text-yellow-500 fa-5x mb-6"></i>
           <div class="p-4">
             <p class="font-bold text-lg md:text-xl mb-6">Database</p>
             <p class="text-gray-600 text-base mb-2">MySQL</p>
@@ -112,14 +118,47 @@
             <hr class="text-gray-600 mb-2" />
           </div>
           <div class="px-2 py-4">
-            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
+            <button class="lg:bg-blue-500 lg:hover:bg-white lg:hover:text-blue-500 bg-red-500 hover:text-red-500 hover:bg-white text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
           </div>
         </div>
       </div>
       <!-- end about me list skills -->
     </section>
     <!-- end section about me -->
-    <section class="w-screen mx-auto py-4 bg-white h-32">Skill Framework</section>
+    <!-- Start menu skill framework -->
+    <section class="container w-screen mx-auto py-4 bg-white px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-16">
+          <img src="../img/skillsatu.jpg" alt="content skill" class="max-w-full rounded-lg shadow-lg" />
+        </div>
+        <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+          <div class="md:pr-12">
+            <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">Skill Framework</h1>
+            <div class="mb-4"></div>
+            <div class="h-1 mx-auto bg-pink-500 w-1/2 opacity-75 my-0 rounded"></div>
+            <p class="mt-4 text-lg text-gray-600">Berikut adalah item dan skala keahlian untuk framework :</p>
+            <ul class="list-none mt-4">
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">CodeIgniter</p>
+                <div class="gradient-skill w-7/8"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">Laravel</p>
+                <div class="gradient-skill w-3/4"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">Bootstrap</p>
+                <div class="gradient-skill w-2/3"></div>
+              </li>
+              <li class="grid grid-cols-2 py-2">
+                <p class="text-lg text-gray-600">Tailwind</p>
+                <div class="gradient-skill w-1/2"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="w-screen mx-auto py-4 bg-gray-300 h-32 text-red-600 lg:text-green-700">Recent Work</section>
     <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">Contact me</section>
     <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
