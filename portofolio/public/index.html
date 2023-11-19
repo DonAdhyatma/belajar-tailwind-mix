@@ -19,6 +19,9 @@
       .gradient-skill {
         background-image: linear-gradient(#fc8181, #fed7d7);
       }
+      .gradient-bottom {
+        background-image: linear-gradient(#4c51bf, #702459);
+      }
     </style>
   </head>
   <body>
@@ -210,7 +213,33 @@
         </div>
       </div>
     </section>
-    <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">Contact me</section>
-    <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
+    <section class="w-screen mx-auto py-4 gradient-bottom">
+      <h1 class="w-full my-2 text-5xl font-bold text-center text-white">Contact me</h1>
+      <div class="mb-4">
+        <div class="h-1 mx-auto bg-green-500 w-1/4 opacity-75 my-0 py-0 rounded"></div>
+      </div>
+      <div class="container p-4 mb-6 w-full lg:w-1/2 shadow-lg rounded-lg bg-gray-200 mx-auto">
+        <form action="index.html" class="p-5 lg:p-10 text-center">
+          <h4 class="text-2xl font-semibold">Ingin menghubungi saya?</h4>
+          <p class="mt-1 mb-4 text-gray-600">Silahkan kirimkan pesan</p>
+          <div class="w-full mb-4 mt-8">
+            <label for="namalengkap" class="uppercase text-gray-600 text-xs font-bold">Nama lengkap</label>
+            <input type="text" name="namalengkap" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Nama Lengkap" id="namalengkap" />
+          </div>
+          <div class="w-full mb-4 mt-8">
+            <label for="email" class="uppercase text-gray-600 text-xs font-bold">Email</label>
+            <input type="email" name="email" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Email" id="email" />
+          </div>
+          <div class="w-full mb-4 mt-8">
+            <label for="pesan" class="uppercase text-gray-600 text-xs font-bold">Pesan</label>
+            <textarea name="pesan" id="pesan" cols="80" rows="4" class="mt-2 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded text-sm shadow w-full" placeholder="Masukan pesan"></textarea>
+          </div>
+          <div class="mt-6">
+            <button type="submit" class="bg-indigo-700 text-white text-sm font-bold uppercase px-6 py-3 rounded shadow hover:bg-indigo-900 hover:shadow-lg">Kirim pesan</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="w-screen mx-auto py-4 bg-white h-32"></section>
   </body>
 </html>
